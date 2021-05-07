@@ -1,0 +1,43 @@
+header, nav, aside, article, main, footer{
+    border: 1px solid red;
+}
+
+body{
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "h h h h h"
+    "n n n n n"
+    " a a a hae v"
+    "f f f f f";
+}
+
+.haus{
+    text-align: center;
+    grid-area: h;
+}
+
+.valstika{
+    grid-area: n;
+}
+
+.vinstri{
+    grid-area: v;
+}
+
+.adal{
+    grid-area: a;
+}
+
+.haegri{
+    grid-area: hae;
+}
+
+.fotur{
+    grid-area: f;
+}
+
+.midtext{
+    font-style: italic;
+    color: goldenrod;
+}
