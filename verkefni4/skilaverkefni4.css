@@ -1,0 +1,74 @@
+header, nav, aside, article, main, footer{
+    border: 0.5px solid red;
+}
+
+body{
+    
+    display: grid;
+    grid-template-areas: 
+    "h"
+    "v"
+    "a"
+    "hae"
+    "f"
+    "n";
+}
+
+.haus{
+    
+    grid-area: h;
+    display: grid;
+    justify-content: center;
+    background: coral;
+}
+
+.valstika{
+    grid-area: n;
+    height: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.vinstri{
+    grid-area: v;
+}
+
+.adal{
+    grid-area: a;
+}
+
+.haegri{
+    grid-area: hae;
+}
+
+.fotur{
+    grid-area: f;
+    display: grid;
+    justify-content: center;
+}
+
+@media screen and (min-width: 600px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        "h h h h"
+        "n n n n"
+        "v a a a"
+        "hae a a a"
+        "f f f f";
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        "h h h h h"
+        "n n n n n"
+        "hae a a a v"
+        "f f f f f";
+    }
+}
